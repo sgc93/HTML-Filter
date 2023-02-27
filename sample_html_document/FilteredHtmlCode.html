@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ::selection {
+        font-weight: 600;
+        color: #5b0000;
+        background: rgba(31, 79, 23, 0.626);
+      }
+
+      body {
+        color: #ffffff;
+        background: #011d38;
+        align-items: center;
+      }
+
+      .title {
+        margin: 12px;
+        padding: 8px 0 19px 0;
+        height: 100px;
+        text-align: center;
+      }
+
+      .menu {
+        margin: 18px 0 39px 0;
+        padding: 9px;
+        text-align: center;
+        position: relative;
+      }
+
+      .menu li {
+        margin: 7px;
+        list-style-type: none;
+        display: inline;
+      }
+
+      .menu li a {
+        text-align: center;
+        padding: 6px;
+        text-decoration: none;
+        color: aliceblue;
+        border: 1px solid #fefefe;
+        border-radius: 24px;
+      }
+
+      .menu li a:hover {
+        box-shadow: 1px 2px 3px 1px white;
+        border-radius: 10px;
+      }
+
+      .explanation,
+      .question,
+      .HTML-filter {
+        margin: 47px;
+        padding: 30px;
+        color: aliceblue;
+        border: #011d38;
+        background: linear-gradient(to left top, black, aqua);
+      }
+
+      #buttons {
+        margin: 43px;
+        padding: 20px;
+        color: rgb(6, 255, 251);
+        position: relative;
+        text-align: center;
+      }
+      #buttons h2 {
+        margin: 22px;
+      }
+
+      .background_changer_button {
+        padding: 10px;
+        background: rgba(2, 99, 99, 0.682);
+        width: 150px;
+        color: white;
+        border-radius: 24px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .background_changer_button:hover {
+        transform: translateY(-4px);
+      }
+
+      .showArea {
+        /* the area where the hidden contents are shown */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        padding: 9px;
+        width: fit-content;
+        height: fit-content;
+        border: 1px solid aqua;
+      }
+
+      .date_and_time {
+        color: aliceblue;
+        width: 80%;
+      }
+
+      .closeDate {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        color: white;
+        background: transparent;
+        border: none;
+      }
+
+      .closeDate:hover {
+        font-size: 20px;
+      }
+
+      .hidden {
+        display: none;
+        background: ;
+      }
+
+      .btns {
+        margin: 23px;
+        padding: 8px;
+        width: 230px;
+        text-align: center;
+        display: inline;
+        background: transparent;
+        color: rgb(255, 0, 0);
+        border: 1px solid rgb(203, 107, 107);
+        border-radius: 13px;
+      }
+
+      .btns:hover {
+        border: none;
+        background-color: black;
+        box-shadow: 1px 1px 12px 1px rgb(209, 9, 9);
+      }
+
+      hr {
+        width: 850px;
+        margin: 23px;
+        position: absolute;
+        left: 23%;
+      }
+
+      .footer {
+        position: relative;
+        margin: 8px;
+        padding: 20px;
+        height: 300px;
+        color: aliceblue;
+      }
+
+      .writtings {
+        position: absolute;
+        padding: 30px;
+        top: 40px;
+        width: 30%;
+      }
+
+      .about {
+        position: absolute;
+        right: 170px;
+        margin: 11px;
+        width: 40%;
+      }
+
+      .about ul {
+        margin: 5px;
+      }
+
+      .about li {
+        margin: 5px;
+        list-style-type: none;
+        padding: 4px;
+      }
+
+      .about li::marker {
+        content: "💻";
+      }
+
+      .about ul li:hover {
+        color: aqua;
+        text-shadow: 13px 1px 14px white;
+        animation-name: abiyo;
+        animation-duration: 2s;
+      }
+      @keyframes abiyo {
+        0% {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .contact {
+        position: absolute;
+        right: 40px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .contact p {
+        margin: 6px;
+      }
+      .contact img {
+        margin: 5px;
+        width: 35px;
+        height: 35px;
+      }
+
+      .contact img:hover {
+        transform: translateY(10px);
+      }
+    </style>
+ </head>
+ <body> <!-- 
+If there are script tags in the attributes of other tags, strip out only the tags themselves and leave the rest of the attribute's value intact --> <!-- Make sure to leave basic markup (fonts, formatting, etc) intact 
+-->
+  <div class="header">
+   <div class="header_background"></div>
+   <div class="title">
+    <h1>Fundamental Of Software Security Group Assignment</h1>
+    <p>This is a sample html document, styled with css, which is filtered by html-filter. To see the effects of the HTML filter uncommet just the last script code (from line 425 to line 430) by removing the commenting symbols.</p>
+   </div>
+   <div class="menu">
+    <ul>
+     <li><a class="color_change" href="#">home</a></li>
+     <li><a class="color_change" href="#question">Question</a></li>
+     <li><a class="color_change" href="#explanation">Explanation</a></li>
+     <li><a class="color_change" href="#html_filter">HTML filter</a></li>
+     <li><a class="color_change" href="#buttons">Check Area</a></li>
+     <li><a class="color_change" href="#who_we_are">About</a></li>
+     <li><a class="color_change" href="#here_we_are">contact</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="main">
+   <div class="question color_change">
+    <h2 id="question">Question Number 3</h2><br>
+    <p>Write an HTML filter that, given an arbitrary HTML document, produces an HTML document that will not result in the execution of script if loaded into a user’s browser, but leaves “basic markup” (fonts, formatting, etc.) intact. Consider the possibility that the input document is not well-formed HTML, and also consider browser-specific features.</p>
+   </div>
+   <div id="buttons" class="color_change">
+    <h2>Check Area For The HTML filter</h2>
+    <p>The following buttons have diffent effects when they are clicked, hovered and ..., these all html event based effects are done with script lines (with javeScript).</p><button type="button" class="date btns"> ⌚ Show Date and Time </button> <button type="button" class="btns"> × Close Date and Time </button> <button type="button" class="btns color_change"> About Question </button> <button type="button" class="btns"> About HTML filter </button> <button type="button" class="background_changer_button color_change"> Change Background </button>
+    <div class="showArea hidden">
+     <p class="date_and_time"></p>
+    </div>
+   </div>
+   <div class="explanation hidden color_change">
+    <h2 id="explanation">Explanation Of The Qestion</h2><br>
+    <p>Writing an HTML filter that can take an arbitrary HTML document as input and produce a safe HTML document for a user's browser is a difficult task due to the complexity of HTML and the many different kinds of browsers in use. As a result, this project requires a deep understanding of both HTML and browser-specific features. <br>
+      The goal is to create an HTML filter that takes in any valid or invalid HTML document as input and produces an output that is safe for loading into any browser. The output should preserve all “basic markup” (fonts, formatting, etc.) while preventing execution of potentially dangerous script. There are two main strategies for achieving this: blocking certain elements or validating tag structure.</p>
+   </div>
+   <div class="HTML-filter hidden color_change">
+    <h2 id="html_filter">What is HTML filter?</h2><br>
+    <p>HTML Filters are a feature in web programming languages such as PHP, ASP.NET and JSP that provide the ability to sanitize user input and protect an application from malicious code injection. HTML filters examine user-inputted data for specific characters or strings that could be used to execute malicious code and remove them from the data before it is stored in a database or displayed in a page.</p>
+   </div>
+  </div>
+  <hr>
+  <div class="footer color_change">
+   <div class="writtings">
+    <p>Constracted by 3rd year Software engineering stundets of Bahir Dar University.</p>
+    <p>Possible to use this document for learning purpose, No © restriction.</p>
+   </div>
+   <div class="about color_change">
+    <p id="who_we_are">Constructed By :</p>
+    <ul>
+     <li class="member1">Abiy Shiferaw</li>
+     <li class="member2">Abrham Desalegn</li>
+     <li class="member3">Jemal Workie</li>
+     <li class="member4">Smachew Gedefaw</li>
+     <li class="member5">Solomon Muhye</li>
+     <li class="member6">Yordanos Ayenew</li>
+    </ul>
+   </div>
+   <div class="contact">
+    <p id="here_we_are">Contact Us</p><a href="#"><img src="facebook.png" alt="facebook"></a> <a href="https://github.com/sgc93/Fundamentals-of-software-security-prooject"><img src="github.png" alt="GitHub"></a> <a href="https://t.me/c/1810013562/7"><img src="telegram.png" alt="telegram"></a> <a href="#"><img src="linkedin.png" alt="linkedIn"></a>
+   </div>
+  </div> <!--
+This is a basic HTML filter that will remove all script tags from an HTML document. It will also remove any event attributes (onclick, onmouseover, etc.) from tags to prevent any script from being executed.
+--> <!-- <script>
+      //remove all script tags
+      $("script").remove();
+      //remove all event attributes
+      $("*").removeAttr("onclick onmouseover onload");
+    </script> -->
+ </body>
+</html>
